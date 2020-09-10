@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/youtube"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toStartOf="@+id/pinterest"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/twitter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toStartOf="@+id/youtube"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/soundcloud"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linkedin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/behance"
+        app:layout_constraintTop_toBottomOf="@+id/youtube"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/soundcloud" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toStartOf="@+id/twitter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/pinterest"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/youtube"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pinterest" />
+
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/soundcloud"
+        app:layout_constraintTop_toBottomOf="@+id/pinterest"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/behance"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/soundcloud"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/instagram"
+        app:layout_constraintTop_toBottomOf="@+id/twitter"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/behance" />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/behance"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/plus_icon"
+        android:layout_width="67dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
