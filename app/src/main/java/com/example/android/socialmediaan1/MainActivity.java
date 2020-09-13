@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView instagram;
     ImageView behance;
     ImageView soundcloud;
+    ImageView linkedin;
     ImageView add;
 
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         instagram = findViewById(R.id.instagram);
         behance = findViewById(R.id.behance);
         soundcloud = findViewById(R.id.soundcloud);
+        linkedin = findViewById(R.id.linkedin);
         add = findViewById(R.id.plus_icon);
 
 
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         instagram.setOnClickListener(this);
         behance.setOnClickListener(this);
         soundcloud.setOnClickListener(this);
+        linkedin.setOnClickListener(this);
         add.setOnClickListener(this);
 
     }
@@ -73,6 +76,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ToWebview("https://www.behance.net/");
         } else if (v.getId() == R.id.soundcloud) {
             ToWebview("https://soundcloud.com/");
+        } else if (v.getId() == R.id.linkedin) {
+            ToWebview("https://www.linkedin.com/");
         }else if (v.getId() == R.id.plus_icon) {
             String startUrl = "https://";
             final EditText newWebSite = new EditText(this);
