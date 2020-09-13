@@ -32,11 +32,11 @@
         android:layout_width="103dp"
         android:layout_height="78dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/soundcloud"
         app:layout_constraintEnd_toStartOf="@+id/twitter"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/facebook" />
 
     <ImageView
@@ -54,11 +54,11 @@
         android:layout_width="103dp"
         android:layout_height="78dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/plus_icon"
         app:layout_constraintEnd_toStartOf="@+id/behance"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/facebook"
         app:srcCompat="@drawable/soundcloud" />
 
     <ImageView
